@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+spacy
+dotenv
+requests
+pandas
+numpy

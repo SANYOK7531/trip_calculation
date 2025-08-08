@@ -1,0 +1,10 @@
+services:
+  doc_analyzer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: doc_analyzer_instance
+    ports:
+      - "8000:8000"
+    # volumes:
+    #   - ./doc_analyzer_windows:/doc_analyzer_windows

@@ -1,0 +1,34 @@
+{
+    "Routes": [
+        {
+            "RouteID": "95a302c2-6974-11f0-8e28-42010aa6000b",
+            "Adresses": [
+                {
+                    "ClientID": "123",
+                    "Latitude": 48.447537,
+                    "Longitude": 22.710539
+                },
+                {
+                    "ClientID": "41dd9da4-8ba1-11ed-87ef-42010aa60002",
+                    "Latitude": 48.502123333,
+                    "Longitude": 22.228825
+                },
+                {
+                    "ClientID": "e0bdc2e2-8ba0-11ed-87ef-42010aa60002",
+                    "Latitude": 48.6028226,
+                    "Longitude": 22.2895964
+                },
+                {
+                    "ClientID": "527390ce-8ba1-11ed-87ef-42010aa60002",
+                    "Latitude": 48.599789,
+                    "Longitude": 22.290968
+                },
+                {
+                    "ClientID": "3ef79eb4-8ba1-11ed-87ef-42010aa60002",
+                    "Latitude": 48.5769148,
+                    "Longitude": 22.3064938
+                }
+            ]
+        }
+    ]
+}
