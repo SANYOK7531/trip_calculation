@@ -23,7 +23,7 @@ RUN pip install --upgrade spacy \
     && python -m spacy download uk_core_news_sm \
     && python -m spacy validate
 
-COPY .env_copy .env
+#COPY .env_copy .env
 
 # Відкриваємо порт
 EXPOSE 8000
