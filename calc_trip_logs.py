@@ -4,7 +4,7 @@ from datetime import datetime
 import json
 
 # 🔐 Зчитуємо секрет-файл
-key_path = "/secrets/SHEETS_KEY"  # Це шлях до змонтованого секрету
+key_path = "/secrets/sheets_key"  # Це шлях до змонтованого секрету
 
 with open(key_path, "r") as f:
     creds_dict = json.load(f)
