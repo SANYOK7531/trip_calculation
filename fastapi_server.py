@@ -7,8 +7,8 @@ from url_generation_copy import generate_maps_url
 from all_distances_copy import format_full_distance_table
 from parse_json import parse_json
 from dotenv_read_copy import ALLOWED_IPS
-from calc_trip_logs import log_request
-import time
+# from calc_trip_logs import log_request
+# import time
 
 app = FastAPI()
 
