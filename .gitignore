@@ -1,3 +1,4 @@
 .env_copy
 __pycache__/
 doc_analyzer_windows
+sheets_key.json

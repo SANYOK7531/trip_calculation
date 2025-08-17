@@ -5,3 +5,5 @@ dotenv
 requests
 pandas
 numpy
+gspread
+oauth2client
