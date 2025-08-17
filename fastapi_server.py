@@ -32,9 +32,9 @@ class RequestBody(BaseModel):
 @app.post("/calculate")
 def calculate_routes(request: Request, data: dict):
     
-    start_time = time.time()
-    client_ip = request.client.host
-    client_name = data.get("client_name", "unknown")  # опціонально
+    # start_time = time.time()
+    # client_ip = request.client.host
+    # client_name = data.get("client_name", "unknown")  # опціонально
 
     try:
         routes = parse_json(data)
@@ -47,9 +47,9 @@ def calculate_routes(request: Request, data: dict):
             maps_url = generate_maps_url(route, all_points)
             full_table = format_full_distance_table(all_points, matrix)
 
-            # 📋 Логування успішного запиту
-            duration_ms = int((time.time() - start_time) * 1000)
-            log_request(client_name, client_ip, len(delivery_points), duration_ms)
+            # # 📋 Логування успішного запиту
+            # duration_ms = int((time.time() - start_time) * 1000)
+            # log_request(client_name, client_ip, len(delivery_points), duration_ms)
 
             return {
                 "message": f"🗺️ Розрахунок успішний для {len(delivery_points)} точок",
@@ -66,6 +66,6 @@ def calculate_routes(request: Request, data: dict):
             }
 
     except Exception as e:
-        log_request(client_name, client_ip, 0, 0, status=f"ERROR: {str(e)}")
+        # log_request(client_name, client_ip, 0, 0, status=f"ERROR: {str(e)}")
         return {"error": str(e)}
 
