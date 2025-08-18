@@ -48,8 +48,8 @@ def calculate_routes(request: Request, data: dict):
             full_table = format_full_distance_table(all_points, matrix)
 
             # 📋 Логування успішного запиту
-            duration_ms = int((time.time() - start_time) * 1000)
-            log_request(client_name, client_ip, len(delivery_points), duration_ms)
+            duration_sec = round(time.time() - start_time, 2)
+            log_request(client_name, client_ip, len(delivery_points), duration_sec)
 
             return {
                 "message": f"🗺️ Розрахунок успішний для {len(delivery_points)} точок",

@@ -19,9 +19,9 @@ client = gspread.authorize(creds)
 # 📄 Відкриваємо таблицю
 sheet = client.open("Trip Calculation Logs").worksheet("Logs")
 
-def log_request(client_name, ip, points_count, duration_ms, status="OK"):
+def log_request(client_name, ip, points_count, duration_sec, status="OK"):
     timestamp = datetime.utcnow().isoformat()
-    row = [ip, client_name, points_count, duration_ms, timestamp, status]
+    row = [ip, client_name, points_count, duration_sec, timestamp, status]
     try:
         sheet.append_row(row)
         print(f"✅ Лог записано: {row}")
